@@ -34,7 +34,7 @@ contract Assignment3Token is ERC20, Ownable, BaseAssignment, AccessControl {
         ERC20(_name, _symbol)
         Ownable(_initialOwner)
     {
-        _grantRole(DEFAULT_ADMIN_ROLE, _initialOwner); // wichtig für Verwaltung
+       _grantRole(DEFAULT_ADMIN_ROLE, _initialOwner); // wichtig für Verwaltung
        _grantRole(BLACK_ROLE, _initialOwner);
        _grantRole(BLACK_ROLE, _validator);
 

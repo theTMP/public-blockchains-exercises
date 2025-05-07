@@ -1,11 +1,11 @@
 const hre = require("hardhat");
 
 async function main() {
-  const baseContract = await hre.ethers.deployContract("Assignment3p1Token", [
-    "TmToken",
-    "TMT",
-    1000000,
-    "0x475a3dA9349DfdD61C1462Ab907520FeEDBb3d91",
+  console.log("Deploying contract...");
+  const baseContract = await hre.ethers.deployContract("NFTminter", [
+    "AmyTheDog",
+    "AD",
+    "bafybeie6enldpuq7umq5zfliesqq3xxtdmokteolc4uvx32hd4tntlis2q",
   ]);
 
   await baseContract.waitForDeployment();
